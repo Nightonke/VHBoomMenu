@@ -10,9 +10,9 @@
 		37B143A61D45EC3C007690B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B143A51D45EC3C007690B9 /* main.m */; };
 		37B143A91D45EC3C007690B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B143A81D45EC3C007690B9 /* AppDelegate.m */; };
 		37B143AC1D45EC3C007690B9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B143AB1D45EC3C007690B9 /* ViewController.m */; };
-		37B143AF1D45EC3C007690B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B143AD1D45EC3C007690B9 /* Main.storyboard */; };
 		37B143B11D45EC3C007690B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B143B01D45EC3C007690B9 /* Assets.xcassets */; };
-		37B143B41D45EC3C007690B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37B143B21D45EC3C007690B9 /* LaunchScreen.storyboard */; };
+		37B143C11D45EC88007690B9 /* VHEaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B143BD1D45EC88007690B9 /* VHEaseManager.m */; };
+		37B143C21D45EC88007690B9 /* VHEase.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B143BF1D45EC88007690B9 /* VHEase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,13 @@
 		37B143A81D45EC3C007690B9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		37B143AA1D45EC3C007690B9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		37B143AB1D45EC3C007690B9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		37B143AE1D45EC3C007690B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		37B143B01D45EC3C007690B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37B143B31D45EC3C007690B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37B143B51D45EC3C007690B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B143BC1D45EC88007690B9 /* VHEaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHEaseManager.h; sourceTree = "<group>"; };
+		37B143BD1D45EC88007690B9 /* VHEaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHEaseManager.m; sourceTree = "<group>"; };
+		37B143BE1D45EC88007690B9 /* VHEase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHEase.h; sourceTree = "<group>"; };
+		37B143BF1D45EC88007690B9 /* VHEase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VHEase.m; sourceTree = "<group>"; };
+		37B143C01D45EC88007690B9 /* VHEaseEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHEaseEnum.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 		37B143981D45EC3C007690B9 = {
 			isa = PBXGroup;
 			children = (
+				37B143BB1D45EC42007690B9 /* VHBoomMenu */,
 				37B143A31D45EC3C007690B9 /* VHBoomMenuExample */,
 				37B143A21D45EC3C007690B9 /* Products */,
 			);
@@ -62,9 +66,7 @@
 				37B143A81D45EC3C007690B9 /* AppDelegate.m */,
 				37B143AA1D45EC3C007690B9 /* ViewController.h */,
 				37B143AB1D45EC3C007690B9 /* ViewController.m */,
-				37B143AD1D45EC3C007690B9 /* Main.storyboard */,
 				37B143B01D45EC3C007690B9 /* Assets.xcassets */,
-				37B143B21D45EC3C007690B9 /* LaunchScreen.storyboard */,
 				37B143B51D45EC3C007690B9 /* Info.plist */,
 				37B143A41D45EC3C007690B9 /* Supporting Files */,
 			);
@@ -77,6 +79,18 @@
 				37B143A51D45EC3C007690B9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		37B143BB1D45EC42007690B9 /* VHBoomMenu */ = {
+			isa = PBXGroup;
+			children = (
+				37B143BC1D45EC88007690B9 /* VHEaseManager.h */,
+				37B143BD1D45EC88007690B9 /* VHEaseManager.m */,
+				37B143BE1D45EC88007690B9 /* VHEase.h */,
+				37B143BF1D45EC88007690B9 /* VHEase.m */,
+				37B143C01D45EC88007690B9 /* VHEaseEnum.h */,
+			);
+			name = VHBoomMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37B143B41D45EC3C007690B9 /* LaunchScreen.storyboard in Resources */,
 				37B143B11D45EC3C007690B9 /* Assets.xcassets in Resources */,
-				37B143AF1D45EC3C007690B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,31 +162,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B143AC1D45EC3C007690B9 /* ViewController.m in Sources */,
+				37B143C11D45EC88007690B9 /* VHEaseManager.m in Sources */,
 				37B143A91D45EC3C007690B9 /* AppDelegate.m in Sources */,
 				37B143A61D45EC3C007690B9 /* main.m in Sources */,
+				37B143C21D45EC88007690B9 /* VHEase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		37B143AD1D45EC3C007690B9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37B143AE1D45EC3C007690B9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		37B143B21D45EC3C007690B9 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				37B143B31D45EC3C007690B9 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		37B143B61D45EC3C007690B9 /* Debug */ = {
